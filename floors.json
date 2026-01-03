@@ -1,0 +1,33 @@
+{
+	"floor1": {
+		"outside": {
+			"name": "Outside",
+			"con": ["hall_bottom"],
+			"special": "",
+			"killerMayMoveHere": false,
+			"description": "You are outside the building.",
+			"unlocked_Item": [],
+			"locked_Item": ["lockpadCode2"],
+			"money": 0
+		},
+		"hall_bottom": {
+			"name": "Bottom Hall",
+			"con": ["outside", "hall_right", "dinning", "basement"],
+			"special": "",
+			"killerMayMoveHere": true,
+			"description": "You are in the bottom part of the hall.",
+			"unlocked_Item": [],
+			"locked_Item": [],
+			"money": 2
+		},
+		"basement": {
+			"name": "Basement",
+			"con": ["hall_bottom"],
+			"special": "Base",
+			"killerMayMoveHere": false,
+			"description": "You are in the basement. The last piece of the code is 21 turn right.",
+			"unlocked_Item": ["LockpadCode3"],
+			"locked_Item": []
+		}
+	}
+}

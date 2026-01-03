@@ -1,0 +1,11 @@
+{
+	"lockpadCode2": {
+		"name": "Lockpad Code 2",
+		"description": "A note with part of a lockpad code written on it: 'The second part of the code is 16 turn left.'"
+	},
+	"LockpadCode3": {
+		"name": "Lockpad Code 3",
+		"description": "A note with part of a lockpad code written on it: 'The last part of the code is 21 turn right.'"
+	}
+
+}
