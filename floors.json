@@ -27,7 +27,141 @@
 			"killerMayMoveHere": false,
 			"description": "You are in the basement. The last piece of the code is 21 turn right.",
 			"unlocked_Item": ["LockpadCode3"],
-			"locked_Item": []
+			"locked_Item": [],		
+			"money": 0		
+		},
+		"dining_room": {
+			"name": "Dining Room",
+			"con": ["hall_bottom", "kitchen","tools_room"],
+			"special": "",
+			"killerMayMoveHere": true,
+			"description": "You are in the Dininf room. The last piece of the code is 21 turn right.",
+			"unlocked_Item": [],
+			"locked_Item": [],
+			"money": 2
+		},
+		"tools_room": {
+			"name": "Tool Room",
+			"con": ["outside", "kitchen"],
+			"special": "",
+			"killerMayMoveHere": true,
+			"description": "You are in the Tools room. The last piece of the code is 21 turn right.",
+			"unlocked_Item": [],
+			"locked_Item": [],
+			"money": 2
+		},
+		"kitchen": {
+			"name": "Kitchen",
+			"con": ["dining_room"],
+			"special": "",
+			"killerMayMoveHere": true,
+			"description": "You are in the kitchen. The last piece of the code is 21 turn right.",
+			"unlocked_Item": [],
+			"locked_Item": [],
+			"money": 2
+		},
+		"living_room": {
+			"name": "living Room",
+			"con": ["hall_right"],
+			"special": "",
+			"killerMayMoveHere": true,
+			"description": "You are in the Living room. The last piece of the code is 21 turn right.",
+			"unlocked_Item": [],
+			"locked_Item": [],
+			"money": 2
+
+		},
+		"hall_right": {
+			"name": "Right Hall",
+			"con": ["living_room", "hall_bottom", "elevator", "hall_upper"],
+			"special": "",
+			"killerMayMoveHere": true,
+			"description": "You are in the right side of the hall.",
+			"unlocked_Item": [],
+			"locked_Item": [],
+			"money": 2
+		},
+		"hall_upper": {
+			"name": "Upper Hall",
+			"con": ["bed_room", "hall_right", "elevator", "hall_closet"],
+			"special": "",
+			"killerMayMoveHere": true,
+			"description": "You are in the upper side of the hall.",
+			"unlocked_Item": [],
+			"locked_Item": [],
+			"money": 2
+		},
+		"bed_room": {
+			"name": "Bed_room",
+			"con": ["bathroom", "bed_closet", "hall_upper"],
+			"special": "",
+			"killerMayMoveHere": true,
+			"description": "You are in the Bed Room",
+			"unlocked_Item": [],
+			"locked_Item": [],
+			"money": 2
+		},
+		"bed_closet": {
+			"name": "Bed Room Closet",
+			"con": ["bed_room"],
+			"special": "",
+			"killerMayMoveHere": true,
+			"description": "You are in the Bed Room Closet",
+			"unlocked_Item": [],
+			"locked_Item": [],
+			"money": 2
+		},
+		"bathroom": {
+			"name": "Bathroom",
+			"con": ["bed_room"],
+			"special": "",
+			"killerMayMoveHere": true,
+			"description": "You are in the Bed Room",
+			"unlocked_Item": [],
+			"locked_Item": [],
+			"money": 2
+		},
+		"hall_closet": {
+			"name": "Hall Closet",
+			"con": ["hall_upper"],
+			"special": "",
+			"killerMayMoveHere": true,
+			"description": "You are in the closet of the hall.",
+			"unlocked_Item": [],
+			"locked_Item": [],
+			"money": 2
+		}
+	},
+	"floor2": {
+		"game_room": {
+			"name": "Game Room",
+			"con": ["valcony","elevator","bathroom2"],
+			"special": "hammer",
+			"killerMayMoveHere": false,
+			"description": "You are in the gaming room.",
+			"unlocked_Item": [],
+			"locked_Item": ["lockpadCode2"],
+			"money": 4
+		},
+		"valcony": {
+			"name": "Valcony",
+			"con": ["game_room"],
+			"special": "hammer",
+			"killerMayMoveHere": true,
+			"description": "You are in the seconf floor valcony.",
+			"unlocked_Item": [],
+			"locked_Item": [],
+			"money": 2
+		},
+		"bathroom2": {
+			"name": "Bathroom",
+			"con": ["game_room"],
+			"special": "Base",
+			"killerMayMoveHere": false,
+			"description": "You are in the second floor bathroom.",
+			"unlocked_Item": ["LockpadCode3"],
+			"locked_Item": [],		
+			"money": 0		
 		}
 	}
 }
