@@ -12,13 +12,13 @@ money = 0
 rooms = json.load(open("floors.json"))
 items = json.load(open("items.json"))
 
-
 def MainLoop():
 	while not death:
 		getFloor()
 		print("===========================================")
-		print(f"You are currently in the {room} on {floor}.") # type: ignore
+		print(f"You are currently in the {room} on {floor}.") #type: ignore
 		print("===========================================")
+		print(f"Money: ${money}")
 		listInventory()
 		listRooms()
 		print("___________________________________________")
@@ -89,7 +89,20 @@ def start():
 
 def cam():
 	clearScreen()
-	pass
+	print("""Floor 1 Camera Feed:
+	   			__________________________________
+	   			|                |        |      |
+	            |    Bedroom               Closet|
+	            |__  _______  ___|  Upper |      |
+	            |Bathroom|Closet |  Hall  |      |
+	   			|        |       |        |      |
+	            |________|_______|___  ___|______|
+	   """)
+	          
+	print("""Floor 2 Camera Feed:
+	   """)
+	wait = input("Press enter to hide the camera feed.")
+	clearScreen()
 
 if __name__ == "__main__":
 	start()
